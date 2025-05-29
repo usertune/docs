@@ -1,18 +1,18 @@
-site_name: UserTune Documentation
+site_name: Usertune Docs
 site_url: https://docs.usertune.io
-site_description: CounterAPI is a free and open-source API for counting things.
+site_description: Usertune is a dynamic content personalization platform that delivers tailored experiences to users based on real-time context and behavior.
 site_author: omegion
 
-repo_url: https://github.com/counterapi/api/
-edit_uri: https://github.com/counterapi/docs/blob/master/docs/
+repo_url: https://github.com/usertune/api/
+edit_uri: https://github.com/usertune/docs/blob/main/docs/
 
 docs_dir: docs
 site_dir: site
-copyright: Copyright &copy; 2021 - <script>document.write(new Date().getFullYear())</script> &bull; Made by <b><a href="https://github.com/omegion" target="_blank">omegion</a></b> with ❤️
+copyright: <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://usertune.io" target="_blank">Usertune</a> &bull; Made with ❤️ in Berlin
 
 theme:
   name: material
-  logo: assets/img/logo.svg
+  logo: assets/img/logo.png
   favicon: assets/favicons/favicon.ico
   palette:
     # Palette toggle for automatic mode
@@ -36,6 +36,8 @@ theme:
         name: Switch to system preference
 
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.expand
     - navigation.footer
     - toc.follow
@@ -49,8 +51,8 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/omegion
-      name: Github Profile of Omegion
+      link: https://github.com/usertune
+      name: Github Profile of Usertune
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -71,4 +73,4 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - git-committers:
-      repository: counterapi/docs
+      repository: usertune/docs
