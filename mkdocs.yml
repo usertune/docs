@@ -3,7 +3,6 @@ site_url: https://docs.usertune.io
 site_description: Usertune is a dynamic content personalization platform that delivers tailored experiences to users based on real-time context and behavior.
 site_author: omegion
 
-repo_url: https://github.com/usertune/api/
 edit_uri: https://github.com/usertune/docs/blob/main/docs/
 
 docs_dir: docs
