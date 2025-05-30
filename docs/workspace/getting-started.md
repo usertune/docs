@@ -1,231 +1,84 @@
 # Getting Started with Workspaces
 
-This guide will walk you through creating and configuring your first workspace in Usertune.
+Follow these steps to create your first workspace in Usertune:
 
-## 🚀 Creating Your First Workspace
+## Step 1: Sign In to Usertune
 
-### Step 1: Sign Up
+1. Navigate to the [Usertune login page](https://app.usertune.io/login)
+2. Enter your email address and password
+3. Click **"Sign in"** to access your account
+4. If you don't have an account yet, click **"sign up for an account"** to register
 
-1. Visit [app.usertune.io](https://app.usertune.io)
-2. Click **"Sign up"** to create your account
-3. Complete the registration form with your details
-4. Verify your email address
+## Step 2: Access Workspaces
 
-### Step 2: Onboarding Process
+1. After logging in, go to [app.usertune.io/workspaces](https://app.usertune.io/workspaces)
+2. You'll see your workspace dashboard with any existing workspaces
+3. This is your central hub for managing all workspace projects
 
-After signing up, you'll be guided through the onboarding process:
+## Step 3: Create New Workspace
 
-1. **Welcome screen** - Introduction to Usertune
-2. **Workspace creation** - Your first workspace is created automatically
-3. **Basic configuration** - Set your workspace name and preferences
-4. **API key generation** - Get your first API credentials
+1. Click the **"New workspace"** button
+2. A workspace creation form will appear with the following fields:
 
-### Step 3: Workspace Configuration
+### Required Information:
+- **Name**: Enter a descriptive name for your workspace
+  - Example: "E-commerce Site", "Marketing Campaign Q1", "Mobile App Content"
+  - Choose names that clearly identify the project or purpose
 
-Configure your workspace settings:
+### Optional Information:
+- **Description**: Add detailed information about the workspace purpose
+  - Example: "Personalized product recommendations for our online store"
+  - This helps team members understand the workspace's role
 
-```
-⚙️ Workspace Settings
-├── 📝 Basic Information
-│   ├── Workspace Name
-│   ├── Description
-│   └── Default Language
-├── 🌍 Localization
-│   ├── Timezone
-│   ├── Date Format
-│   └── Number Format
-├── 🔐 Security
-│   ├── API Key Management
-│   ├── Access Control
-│   └── Audit Settings
-└── 💳 Billing
-    ├── Subscription Plan
-    ├── Usage Limits
-    └── Payment Method
-```
+### Access Settings:
+- **Public**: Toggle this option to make the workspace publicly accessible
+  - **Private** (default): Requires authentication to access content
+  - **Public**: Allows unauthenticated access to workspace content
+  - See [Public Workspaces](public-workspaces.md) for detailed information
 
-## 🔑 Getting Your API Keys
+## Step 4: Create the Workspace
 
-### Accessing API Keys
+1. Review your workspace configuration
+2. Click **"Create"** to finalize the workspace
+3. You'll be redirected to your new workspace where you can start adding content
 
-1. **Navigate to Settings** - Click the settings icon in your workspace
-2. **Go to API Keys section** - Find the "API Keys" tab
-3. **View your keys** - See your generated API keys
+## Next Steps
 
-### API Key Types
+After creating your workspace:
 
-You'll get different keys for different environments:
+1. **Add Content**: Start creating personalized content items within your workspace
+2. **Configure Settings**: Adjust workspace permissions and settings as needed
+3. **Invite Team Members**: Share workspace access with collaborators
+4. **Test Content**: Use the built-in testing tools to validate your personalization
 
-```bash
-# Production API Key (for live applications)
-Bearer pk_live_1234567890abcdef...
+## Workspace Management
 
-# Development API Key (for testing)
-Bearer pk_dev_1234567890abcdef...
-```
+Once your workspace is created, you can:
 
-### Security Best Practices
+- **Edit Details**: Update name, description, and public settings
+- **Monitor Usage**: Track content performance and access patterns  
+- **Manage Content**: Organize and maintain your content items
+- **Control Access**: Adjust public/private settings as your needs change
 
-- **Never expose API keys** in client-side code
-- **Use environment variables** to store keys securely
-- **Rotate keys regularly** for security
-- **Use different keys** for different environments
+## Common Workspace Examples
 
-## 🧪 Making Your First API Call
+Here are some typical workspace configurations:
 
-Test your workspace connection with a simple API call:
+### Development Workspace
+- **Name**: "MyApp - Development"
+- **Description**: "Development environment for testing personalized content"
+- **Public**: Disabled (private)
 
-### 1. Create Test Content
+### Marketing Campaign
+- **Name**: "Holiday Campaign 2024"
+- **Description**: "Seasonal promotional content with geo-targeted messaging"
+- **Public**: Enabled (for public website integration)
 
-First, create a simple content item in your dashboard:
-
-1. Go to **Content** section in your workspace
-2. Click **"Create Content"**
-3. Set content slug: `welcome-message`
-4. Add a default variant with simple text
-
-### 2. Test API Call
-
-```bash
-# Replace with your actual workspace ID and API key
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-     https://api.usertune.io/v1/workspace/ws_your_id/content/welcome-message
-```
-
-### 3. Expected Response
-
-```json
-{
-  "content_slug": "welcome-message",
-  "variant": {
-    "id": "default",
-    "name": "Default Message",
-    "data": {
-      "text": "Welcome to Usertune!"
-    }
-  },
-  "personalization_context": {
-    "rule_matched": "default",
-    "confidence": 1.0
-  }
-}
-```
-
-## 📋 Workspace Dashboard Tour
-
-### Navigation Overview
-
-```
-🏠 Dashboard
-├── 📊 Analytics - Performance metrics and insights
-├── 📄 Content - Manage your content items
-├── 🎯 Variants - Personalization variants
-├── 👥 Team - Team member management
-├── 🔧 Settings - Workspace configuration
-└── 📚 Documentation - Help and guides
-```
-
-### Key Sections
-
-#### **Analytics Dashboard**
-- **Content performance** - Which content performs best
-- **User engagement** - How users interact with your content
-- **Conversion tracking** - Goal completion rates
-- **A/B test results** - Performance comparisons
-
-#### **Content Management**
-- **Content library** - All your content items
-- **Content editor** - Create and edit content
-- **Version history** - Track content changes
-- **Content organization** - Tags and categories
-
-#### **Variant Management**
-- **Variant editor** - Create personalization variants
-- **Targeting rules** - Define who sees what content
-- **A/B test setup** - Configure content experiments
-- **Performance monitoring** - Track variant effectiveness
-
-## 🎯 Quick Setup Checklist
-
-Complete these tasks to get your workspace ready:
-
-### ✅ Basic Setup
-- [ ] **Workspace name** - Set a descriptive name
-- [ ] **Description** - Add workspace purpose
-- [ ] **Timezone** - Set your local timezone
-- [ ] **Team invitation** - Invite team members
-
-### ✅ Content Setup
-- [ ] **First content item** - Create test content
-- [ ] **Default variant** - Add fallback content
-- [ ] **API test** - Verify API connectivity
-- [ ] **Integration test** - Test with your application
-
-### ✅ Security Setup
-- [ ] **API keys** - Secure your API keys
-- [ ] **Environment separation** - Use different keys for dev/prod
-- [ ] **Access control** - Set appropriate team permissions
-- [ ] **Audit logging** - Enable change tracking
-
-## 🛠️ Integration Examples
-
-### Frontend Integration (JavaScript)
-
-```javascript
-// Simple fetch example
-async function getPersonalizedContent() {
-  const response = await fetch(
-    'https://api.usertune.io/v1/workspace/ws_your_id/content/welcome-message',
-    {
-      headers: {
-        'Authorization': 'Bearer YOUR_API_KEY',
-        'Content-Type': 'application/json'
-      }
-    }
-  );
-  
-  const content = await response.json();
-  document.getElementById('welcome').textContent = content.variant.data.text;
-}
-```
-
-### Backend Integration (Node.js)
-
-```javascript
-const axios = require('axios');
-
-async function getContent(contentSlug, userContext = {}) {
-  try {
-    const response = await axios.post(
-      `https://api.usertune.io/v1/workspace/ws_your_id/content/${contentSlug}`,
-      { user_context: userContext },
-      {
-        headers: {
-          'Authorization': 'Bearer YOUR_API_KEY',
-          'Content-Type': 'application/json'
-        }
-      }
-    );
-    
-    return response.data;
-  } catch (error) {
-    console.error('Failed to fetch content:', error);
-    return null;
-  }
-}
-```
-
-## 🔍 What's Next?
-
-Now that your workspace is set up, explore these topics:
-
-- [← What is a Workspace?](what-is-workspace.md) - Learn workspace concepts
-- [Team Management →](team-management.md) - Invite and manage team members
-- [API Keys →](api-keys.md) - Advanced API key management
-- [Best Practices →](best-practices.md) - Workspace organization tips
-
-**Ready to create content?** Check out the [Content Guide](../content/) to start building personalized experiences.
+### Product Demo
+- **Name**: "Product Demo - Public"
+- **Description**: "Demo content for sales presentations and client showcases"
+- **Public**: Enabled (for easy client access)
 
 ---
 
-**Need help?** Contact our support team at [customer@usertune.io](mailto:customer@usertune.io) 
+Once you've created your workspace, you're ready to start building personalized content experiences. Continue to the [Content documentation](../content/index.md) to learn about creating your first content items. 

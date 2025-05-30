@@ -9,6 +9,32 @@ docs_dir: docs
 site_dir: site
 copyright: <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://usertune.io" target="_blank">Usertune</a> &bull; Made with ❤️ in Berlin
 
+nav:
+  - Home: index.md
+  - Workspace: 
+    - Overview: workspace/index.md
+    - Getting Started: workspace/getting-started.md
+    - Public Workspaces: workspace/public-workspaces.md
+  - Content:
+    - Overview: content/index.md
+    - Getting Started: content/getting-started.md
+    - Public Content: content/public-content.md
+  - Variant:
+    - Overview: variant/index.md
+    - Getting Started: variant/getting-started.md
+    - Payload: variant/payload.md
+    - Conditions: variant/conditions.md
+    - Geographic Attributes: variant/geo-attributes.md
+    - Time Attributes: variant/time-attributes.md
+    - Custom Attributes: variant/custom-attributes.md
+  - Testing:
+    - Overview: testing/index.md
+    - Getting Started: testing/getting-started.md
+    - Context Configuration: testing/context-configuration.md
+    - Test Scenarios: testing/scenarios.md
+    - Best Practices: testing/best-practices.md
+    - API Testing: testing/api-testing.md
+
 theme:
   name: material
   logo: assets/img/logo.png
