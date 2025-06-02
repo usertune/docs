@@ -27,6 +27,9 @@ nav:
     - Geographic Attributes: variant/geo-attributes.md
     - Time Attributes: variant/time-attributes.md
     - Custom Attributes: variant/custom-attributes.md
+  - Libraries:
+    - Overview: libraries/index.md
+    - JavaScript: libraries/javascript.md
   - Testing:
     - Overview: testing/index.md
     - Getting Started: testing/getting-started.md
