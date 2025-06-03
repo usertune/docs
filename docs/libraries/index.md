@@ -36,7 +36,6 @@ Don't see your preferred language or framework? We welcome community contributio
 If you need help with any of our libraries:
 
 - 📖 Check the documentation for your specific library
-- 💬 Join our [Discord community](https://discord.gg/usertune)
 - 📧 Email us at [support@usertune.io](mailto:support@usertune.io)
 - 🐛 Report issues on [GitHub](https://github.com/usertune)
 

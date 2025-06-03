@@ -30,6 +30,9 @@ nav:
   - Libraries:
     - Overview: libraries/index.md
     - JavaScript: libraries/javascript.md
+  - Legal & Compliance:
+    - Overview: legal/index.md
+    - Geographical Restrictions: legal/geographical-restrictions.md
   - Testing:
     - Overview: testing/index.md
     - Getting Started: testing/getting-started.md
@@ -102,3 +105,4 @@ plugins:
       enable_creation_date: true
   - git-committers:
       repository: usertune/docs
+      token: !ENV ["GITHUB_TOKEN"]
