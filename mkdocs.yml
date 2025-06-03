@@ -105,4 +105,4 @@ plugins:
       enable_creation_date: true
   - git-committers:
       repository: usertune/docs
-      token: !ENV ["token"]
+      token: !ENV ["GITHUB_TOKEN"]
