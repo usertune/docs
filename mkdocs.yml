@@ -80,6 +80,9 @@ extra_css:
 
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-8EB2RC1BB4
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/usertune
