@@ -82,7 +82,6 @@ theme:
     - content.tooltips
     - search.suggest
     - search.highlight
-    - announce.dismiss
 extra_css:
   - stylesheets/extra.css
 
