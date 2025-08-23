@@ -49,7 +49,7 @@ jobs:
       - name: Create CNAME file for GitHub Pages
         run: echo "docs.usertune.io" > ./site/CNAME
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
       - name: Deploy to GitHub Pages
